@@ -79,10 +79,10 @@ public class BankAccountTest {
     }
     @Test
     public void checkSecondConstructor() {
-        BankAccount account = new BankAccount("ChewYT",8888);
+        BankAccount account = new BankAccount("ChewYT",8888.88f);
         //Bank account with initial funds\
 
-        float expected = 8888; 
+        float expected = 8888.88f; 
         float actual = account.getBalance();
         Assertions.assertEquals(expected, actual);
         
